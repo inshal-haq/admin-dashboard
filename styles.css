@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,15 @@
 
 body {
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
+
+.icon {
+  filter: invert(100%) sepia(54%) saturate(2218%) hue-rotate(180deg) brightness(105%) contrast(111%);
+  width: 40px;
+}
+
+/* MAIN */
 
 .main {
   min-height: 100vh;
@@ -15,15 +25,32 @@ body {
   grid-template-rows: 1fr 4fr;
 }
 
+/* SIDEBAR */
+
 .sidebar {
+  padding: 15px;
   grid-row: 1 / span 2;
-  background-color: aquamarine;
+  background-color: #1893d4;
 }
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* HEADER */
 
 .header {
-  background-color: cadetblue;
+  background-color: #fefeff;
 }
 
+/* CONTENT */
+
 .content {
-  background-color: burlywood;
+  background-color: #e3e8f1;
 }
