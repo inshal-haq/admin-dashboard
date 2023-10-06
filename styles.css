@@ -12,7 +12,7 @@ body {
 
 .icon {
   filter: invert(100%) sepia(54%) saturate(2218%) hue-rotate(180deg) brightness(105%) contrast(111%);
-  width: 40px;
+  width: 24px;
 }
 
 /* MAIN */
@@ -41,6 +41,29 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: white;
+
+  padding-bottom: 24px;
+}
+
+.sidebar-header .icon {
+  width: 40px;
+}
+
+.sidebar-nav-items {
+  padding: 20px 8px;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 /* HEADER */
