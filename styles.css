@@ -22,7 +22,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: auto 1fr;
 }
 
 /* SIDEBAR */
@@ -31,6 +31,7 @@ body {
   padding: 15px;
   grid-row: 1 / span 2;
   background-color: #1893d4;
+  z-index: 3; /* so shadow of header doesn't show on right of sidebar */
 }
 
 .sidebar-header {
@@ -70,8 +71,8 @@ body {
 
 .header {
   background-color: #fefeff;
-
-  padding: 16px 40px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
 /* header - top */
@@ -80,6 +81,8 @@ body {
   display: flex;
   align-items: center;
   gap: 120px;
+
+  padding: 16px 88px 16px 40px;
 }
 
 .header-top img {
@@ -126,12 +129,69 @@ body {
 .top-right div {
   font-size: 18px;
   font-weight: 500;
-  padding-right: 48px;
 }
 
 /* header - bot */
 
+.header-bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  padding: 16px 72px 16px 40px;
+}
+
+.bot-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+#profile-pic-big {
+  width: 60px;
+  height: 60px;
+  border-radius: 80px;
+
+  object-fit: cover;
+  object-position: 40%;
+}
+
+.greeting {
+  font-size: 12px;
+  font-weight: 500;
+
+  margin-bottom: 2px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.bot-right {
+  display: flex;
+  gap: 24px;
+}
+
+.bot-right button {
+  border: none;
+  border-radius: 24px;
+  background-color: #1893d4;
+  color: #fefeff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 0px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.bot-right button:hover {
+  background-color: #1892d4dd;
+}
+
+.bot-right button:active {
+  background-color: #127db7;
+}
 
 /* CONTENT */
 
