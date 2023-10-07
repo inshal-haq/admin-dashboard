@@ -252,6 +252,7 @@ body {
   flex: 1;
 
   font-size: 14px;
+  line-height: 1.1rem;
   color: #777777;
 }
 
@@ -268,8 +269,36 @@ body {
 
 /* content - announcements */
 
-.announcements {
-  background-color: aquamarine;
+.announcements {  
+  display: flex;
+  flex-direction: column;
+}
+
+.announcements-card {
+  flex: 1;
+  
+  background-color: #fefeff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+}
+
+.announcement-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.announcement-desc {
+  font-size: 12px;
+  line-height: 0.9rem;
+  color: #777777;
+}
+
+.divider {
+  height: 0.5px;
+  background-color: #dbdbdb;
+  margin: 16px 0px;
 }
 
 /* content - trending */
