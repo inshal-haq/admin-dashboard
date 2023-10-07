@@ -197,4 +197,22 @@ body {
 
 .content {
   background-color: #e3e8f1;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+.projects {
+  grid-row: 1 / span 2;
+  background-color: burlywood;
+}
+
+.announcements {
+  background-color: aquamarine;
+}
+
+.trending {
+  background-color: bisque;
 }
