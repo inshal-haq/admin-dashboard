@@ -202,16 +202,53 @@ body {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 16px;
+
+  padding: 32px 24px 56px 16px;
 }
 
-.projects {
+/* content - your projects */
+
+.your-projects {
   grid-row: 1 / span 2;
   background-color: burlywood;
 }
 
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project-card {
+  background-color: #fefeff;
+  height: 180px;
+  border-radius: 8px;
+  border-left: 8px solid #f0b528;
+}
+
+.project-name {
+
+}
+
+.project-desc {
+
+}
+
+.interaction-tray {
+  display: flex;
+}
+
+.tray-icons {
+  width: 24px;
+}
+
+/* content - announcements */
+
 .announcements {
   background-color: aquamarine;
 }
+
+/* content - trending */
 
 .trending {
   background-color: bisque;
